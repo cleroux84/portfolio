@@ -13,10 +13,8 @@
     overflow-x: hidden;
   }
 
-
-  /* navbar */
-  
-  .nav-link{
+/* navbar */ 
+.nav-link{
     font-size: larger;
     color: grey; 
 } 
@@ -200,7 +198,7 @@
 
 /* Section A Propos */
 
-#apropos{
+.apropos{
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -212,15 +210,12 @@
     display: flex;
     margin: auto;
     padding: 40px;
+    margin-bottom: 80px;
+    
  }
  /*FIN Section A Propos */
 
  /* Section Competences */
-
- #competences{
-  float: right;
-   margin-top: 80px;
- }
 .col-3{
   height: 250px;
   display: flex;
@@ -275,6 +270,10 @@ top: 0;
 
 
  /* Section Portfolio */
+.portfolio{
+  margin-top: 80px;
+    float: left;
+}
 
 .card {
   border: 1px solid var(--color-three);
@@ -311,3 +310,82 @@ opacity: 0.6;
   justify-content: space-around;
   height: 50px;
 }
+
+.secondRowProjects{
+  justify-content: space-around;
+}
+ /* FIN Section Portfolio */
+
+ /* Section Contact */
+  
+  
+ .wrapper {
+  display: flex;
+  justify-content: center;
+  margin: 5rem auto 0 auto;
+  width: 100%;
+  max-width: 40rem;
+}
+
+/* .icon {
+  margin: 0 2rem;
+  font-size: 2rem;
+} */
+
+
+.fab,
+.fas {
+  color: #fff;
+  background: #232323;
+  padding: 0.65rem;
+  border-radius: 50%;
+}
+
+.fa-github {
+  border: 3px solid #1b1f23;
+}
+.fa-linkedin {
+  border: 3px solid #006097;
+}
+.fa-whatsapp {
+  border: 3px solid #25D366;
+}
+.fa-envelope {
+  border: 3px solid #cb2027;
+}
+
+.fa-github,
+.fa-linkedin,
+.fa-whatsapp,
+.fa-envelope {
+  font-size: 80px;
+  transition: all 0.2s ease;
+}
+
+.fab:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+  border-radius: 0.5rem;
+  transition: all 0.2s ease;
+}
+.fas:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+  border-radius: 0.5rem;
+  transition: all 0.2s ease;
+}
+
+.fa-github:hover {
+  background: #1b1f23;
+}
+.fa-linkedin:hover {
+  background: #006097;
+}
+.fa-whatsapp:hover {
+  background: #25D366;
+}
+.fa-envelope:hover {
+  background: #cb2027;
+}
+
+

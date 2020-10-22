@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href='index.css' rel="stylesheet">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/d78c816ffb.js" crossorigin="anonymous"></script>
     <title>Portfolio - Céline LEROUX</title>
 </head>
 <body>
@@ -37,37 +38,34 @@
     <h2>Dev Web Junior</h2>
 </div>
 
-<div class="container-fluid">
-<section class="container">
-  <div class="row">
-    <div class="col-6">
-      <h1>A propos</h1>
+<section class="container-fluid">
+  <div class="container">
+    <div class="row">
+      <div class="col-6">
+        <h1 id="apropos">A propos</h1>
+      </div>
+      <div class="col-6">
+        <a class="buttonPdf one" target="_blank" href="./pdf/CV_cleroux.pdf">
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>  
+        Voir CV complet
+        </a>
+      </div>
     </div>
-    <div class="col-6">
-      <a class="buttonPdf one" target="_blank" href="./pdf/CV_cleroux.pdf">
-        <span></span>
-        <span></span>
-        <span></span>
-        <span></span>  
-      Voir CV complet
-      </a>
+    <div class="container apropos">
+        <p class="aproposContent">Après plus de 10 ans d'expérience en tant qu'assistante administrative polyvalente dans diverses structures, j'ai eu l'opportunité d'intégrer en avril 2020 la formation de développeur Web et Web Mobile au sein de l'école Simplon de Roanne.
+            Cette reconversion s'inscrit dans une expérience professionnelle où les fonctions et le respect des procédures sont aussi primordials qu'un bon relationnel. Je suis donc habituée à travailler de façon productive, avec des impératifs, des objectifs et l'exigence d'un résultat qualitatif.
+            Je m'intègre avec le même plaisir dans une mission d'équipe, collaborative, transversale ou en autonomie et suis appréciée pour ma capacité à exécuter le travail demandé, tout en étant capable de recul et force de proposition. 
+        </p>
     </div>
-  </div>
-  <div id="apropos" class="container">
-      
-      <p class="aproposContent">Après plus de 10 ans d'expérience en tant qu'assistante administrative polyvalente dans diverses structures, j'ai eu l'opportunité d'intégrer en avril 2020 la formation de développeur Web et Web Mobile au sein de l'école Simplon de Roanne.
-          Cette reconversion s'inscrit dans une expérience professionnelle où les fonctions et le respect des procédures sont aussi primordials qu'un bon relationnel. Je suis donc habituée à travailler de façon productive, avec des impératifs, des objectifs et l'exigence d'un résultat qualitatif.
-          Je m'intègre avec le même plaisir dans une mission d'équipe, collaborative, transversale ou en autonomie et suis appréciée pour ma capacité à exécuter le travail demandé, tout en étant capable de recul et force de proposition. 
-      </p>
   </div>
 </section>
-</div>
 
-<div id="competences" class="container-fluid">
-  <div class="container">
-    <h1>Mes compétences</h1>
-  </div>
-  <section class="container">
+<section class="container-fluid">
+  <div class="container competences">
+    <h1 id="competences">Mes compétences</h1>
       <div class="row">
         <div class="col-3 item">
           <div class="imageContent">
@@ -169,14 +167,14 @@
             </div>
           </div>
         </div>
-    </section>
-  </div>
+      </div>
+     </div>
+     
+  </section>
 
-<section>
-  <div id="portfolio"class="container-fluid">
+<section class="container-fluid portfolio">
     <div class="container">
-      <h1>Mon portfolio</h1>
-      <div class="container">
+      <h1 id="portfolio">Mon portfolio</h1>
         <div class="row">
             <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
                 <div class="card shadow">
@@ -254,10 +252,10 @@
             </div>
         </div>
 
-        <div class="row">
-          <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
+        <div class="row secondRowProjects">
+          <div class="col-md-4">
               <div class="card shadow">
-                  <img src="" class="card-img-top" alt="...">
+                  <img src="images/projets/weatherApp.png" class="card-img-top" alt="...">
                   <div class="card-body card-titles">
                       <h2 class="card-title">My Weather App</h2>
                       <h5 class="card-title">React + API</h5>
@@ -266,13 +264,13 @@
                   <div class="card-body card-button">
                       <div class="row">
                           <div class="col col-xs-6 ">
-                            <a target="_blank" href="">
-                              <button type="button" class="btn btn-outline-light">GITHUB</button>
+                            <a target="_blank" href="https://github.com/cleroux84/wheatherApp">
+                              <button  type="button" class="btn btn-outline-light">GITHUB</button>
                             </a>
                           </div>
                           <div class="col col-xs-6 ">
                             <a href="#">
-                              <button type="button" class="btn btn-outline-light">SITE</button>
+                              <button disabled type="button" class="btn btn-outline-light">SITE</button>
                             </a>                            
                           </div>
                       </div>
@@ -280,9 +278,9 @@
               </div>
           </div>
   
-          <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
+          <div class="col-md-4">
             <div class="card shadow">
-              <img src="" class="card-img-top" alt="...">
+              <img src="images/projets/tictactoe.png" class="card-img-top" alt="...">
               <div class="card-body card-titles">
                   <h2 class="card-title">Tic Tac Toe</h2>
                   <h5 class="card-title">Full stack Javascript</h5>
@@ -291,34 +289,51 @@
               <div class="card-body card-button">
                   <div class="row">
                       <div class="col col-xs-6 ">
-                        <a target="_blank" href="">
+                        <a target="_blank" href="https://github.com/cleroux84/Morpion">
                           <button type="button" class="btn btn-outline-light">GITHUB</button>
                         </a>
                       </div>
                       <div class="col col-xs-6 ">
                         <a href="#">
-                          <button type="button" class="btn btn-outline-light">SITE</button>
+                          <button disabled type="button" class="btn btn-outline-light">SITE</button>
                         </a>                            
                       </div>
                   </div>
               </div>
           </div>
-          </div>
-  
-     
+        </div>
       </div>
-    </div>
+  </div>
+</section>
+
+<section>
+    <div class="container-fluid contact">
+      <div class="container">
+        <h1 id="contact">Contact</h1>
+        <div class="wrapper">
+          <div class="icon">
+          <a class="btn" target="_blank"  href="https://github.com/cleroux84">
+            <i class="fab fa-github"></i>
+          </a>
+          <a class="btn" target="_blank" href="https://www.linkedin.com/in/c%C3%A9line-leroux-b12163b7/">
+            <i class="fab fa-linkedin"></i>
+          </a>
+          <a class="btn" href="tel:+33699839387">
+            <i class="fab fa-whatsapp"></i>
+          </a>
+          <a class="btn" href="mailto:cleroux84@gmail.com">
+            <i class="fas fa-envelope"></i>
+          </a>
+        </div>
+      </div>
     </div>
   </div>
 </section>
-<section>
-    <div class="contact">
-        
-    </div>
-</section>
-   
 
-     </div>
+
+
+
+
 
 </body>
 
