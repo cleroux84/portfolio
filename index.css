@@ -435,6 +435,18 @@ opacity: 0.6;
 
 /* FIN scroll to top */
 
+footer{
+  display: flex !important  ;
+  justify-content: center !important;
+}
+#goTopFooter{
+  margin-bottom: 50px;
+  padding:20px;
+  border:none;
+}
+.faFooter{
+  font-size: 50px;
+}
 
 @media (max-width: 450px) {
   .logoHtml
@@ -445,7 +457,8 @@ opacity: 0.6;
   { width: 125%;}
   .item
   {height: 130px;}
-
+  #goTop
+  {display: none;}
 }
 @media (min-width: 700px){
   .logoHtml
