@@ -235,7 +235,7 @@
   right: 0;
   top: 0;
   bottom: 0;
-  background-color: rgba(255, 255, 255, 0.74);
+  background-color: rgba(255, 255, 255, 0.74) !important;
   overflow: hidden;
   width: 100%;
   height: 100%;
@@ -258,6 +258,12 @@
 top: 0;
 }
 
+.item{
+  height: 200px !important;
+}
+.logoCss
+{ width: 100% !important;}
+
 .text {
   color: #343a40;
   font-size: 2vw;
@@ -269,7 +275,34 @@ top: 0;
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
   text-align: center;
-  background-color:rgba(255, 255, 255, 0);
+  background-color:rgba(255, 255, 255, 0) !important;
+}
+
+@media (max-width: 450px) {
+  .logoHtml
+    { width: 120%;}
+  .logoCss
+  { width: 85%;}
+  .logoJs
+  { width: 125%;}
+  .item
+  {height: 130px;}
+  #goTop
+  {display: none;}
+  .overlay{
+    display: none;
+  }
+}
+@media (min-width: 700px){
+  .logoHtml
+    { width: 90%; }
+    .logoCss
+    { width: 70%;}
+    .logoJs
+    { width: 105%;}
+    .item
+    {height: 160px;}
+    
 }
  /* FIN Section Competences */
 
@@ -448,26 +481,3 @@ footer{
   font-size: 50px;
 }
 
-@media (max-width: 450px) {
-  .logoHtml
-    { width: 120%;}
-  .logoCss
-  { width: 85%;}
-  .logoJs
-  { width: 125%;}
-  .item
-  {height: 130px;}
-  #goTop
-  {display: none;}
-}
-@media (min-width: 700px){
-  .logoHtml
-    { width: 90%; }
-    .logoCss
-    { width: 70%;}
-    .logoJs
-    { width: 105%;}
-    .item
-    {height: 160px;}
-
-}
