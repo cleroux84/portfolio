@@ -216,8 +216,13 @@
     margin: auto;
     padding: 40px;
     margin-bottom: 80px;
-    
  }
+
+ @media (max-width: 450px) {
+  .aproposContent{
+    text-align: center;
+  }
+}
  /*FIN Section A Propos */
 
  /* Section Competences */
